@@ -1,0 +1,192 @@
+/*重置Reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ddd;
+}
+
+/*顶部*/
+header.header {
+	/* Positioning */
+	/*position: relative;*/
+	top: 0;
+	/*right: 0;*/
+	/*bottom: 0;*/
+	/*left: 0;*/
+	z-index: 100;
+
+	/* Box-model */
+	/*display: block;*/
+	/*float: left;*/
+	width: 100%;
+	height: 3em;
+
+	/* Typography */
+	/*font: normal 16px "宋体";*/
+	/*line-height: 1.5;*/
+	color: white;
+	/*text-align: center;*/
+
+	/* Visual */
+	background: black;
+	/*border: 0px solid white;*/
+	/*border-radius: 3px;*/
+
+	/* Misc */
+	opacity: 1;
+}
+header.header h1 {
+	margin-left: .5em;
+	float: left;
+	line-height: 1.5;
+}
+/*顶部导航*/
+header.header>nav {
+	float: right;
+	line-height: 3;
+}
+header.header>nav li {
+	float: left;
+	margin-right: 1.75em;
+}
+header.header>nav a {
+	text-decoration: none;
+}
+header.header>nav a:link {
+	color: white;
+}
+header.header>nav a:visited {
+	color: lightgray;
+}
+header.header>nav a:focus {
+	color: paleturquoise;
+}
+header.header>nav a:hover {
+	color: aqua;
+}
+header.header>nav a:active {
+	color: deepskyblue;
+}
+
+section {
+	margin: 1.2em;
+	padding: 1em;
+	border: .1em solid lightgray;
+	box-shadow: .1em .1em gray;
+	background: white;
+}
+section h2 {
+	margin-top: 1em;
+	color: black;
+}
+section h3 {
+	margin: .5em 0;
+	color: gray;
+}
+section p.author_time {
+	margin: .5em 0;
+	color: darkgray;
+}
+section p.para {
+	margin: 1em 0;
+	line-height: 1.5em;
+	text-indent: 2em;
+}
+section p.img {
+	margin: 0;
+}
+section li {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+}
+section#sec_2 li{
+	list-style: none;
+}
+section#sec_4 li{
+	margin-left: 3.5em;
+}
+section>figure {
+	margin: 1.5em 3em;
+	width: 14em;
+	border: .1em solid lightgray;
+}
+section>figure>figcaption {
+	margin: .5em 0;
+	text-align: center;
+	text-overflow: ellipsis;
+}
+section>figure>img {
+	margin: 1em;
+}
+section table {
+	width: 100%;
+	background: lightgray;
+}
+section table tr {
+	line-height: 1.5em;
+}
+section table th, section table td {
+	padding-left: 0.5em;
+}
+section thead {
+	color: white;
+	font-family: "黑体";
+	text-align: left;
+	background: black;
+}
+section tbody {
+	background: white;
+}
+section tfoot {
+	font-family: "黑体";
+	font-weight: bold;
+	background: lightgray;
+}
+
+aside {
+	margin: 2em 1.8em 1.5em 1.2em;
+	padding: 1em;
+	border: .1em solid lightgray;
+	box-shadow: .1em .1em gray;
+	background: white;
+}
+aside table {
+	width: 90%;
+}
+aside table tr {
+	line-height: 2.5em;
+}
+aside table th {
+	text-align: right;
+	vertical-align: top;
+}
+aside table td.reg_tips {
+	color: lightgray;
+}
+aside textarea {
+	width: 100%;
+}
+aside input#reg_submit {
+	width: 100%;
+	height: 2.5em;
+	margin: 1em 0;
+	font: 1.2em "黑体";
+	color: white;
+	background: mediumblue;
+	border: 0;
+	border-radius: 0.5em;
+}
+footer {
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+	height: 5em;
+	line-height: 5em;
+	color: white;
+	text-align: center;
+	background: black;
+}
