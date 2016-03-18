@@ -8,38 +8,79 @@
 
 body {
 	font-size: 16px;
-	background: #ddd;
+	background-color: #ddd;
 }
 
 header {
-	top: 0;
-	z-index: 100;
 	width: 100%;
-	height: 3rem;
-	color: white;
-	background: black;
+	min-width: 240px;
+	height: 4rem;
+	background-color: black;
+}
+
+.header-logo {
+	position: absolute;
+	left: 1rem;
 }
 
 header img {
-	float: left;
+	position: absolute;
 	width: 10rem;
 	height: 3rem;
-	margin-left: 1.5rem;
+	top: .5rem;
+	left: 0;
 }
 
 header h1 {
-	float: left;
-	line-height: 1.5;
+	position: absolute;
+	width: 9rem;
+	top: .5rem;
+	left: 10rem;
+	color: white;
 }
 
 header nav {
-	float: right;
-	line-height: 3;
+	position: absolute;
+	top: 1.5rem;
+	right: 0;
 }
 
 header li {
 	float: left;
-	margin-right: 1.75rem;
+	margin-right: .75rem;
+	margin-left: .75rem;
+	font-size: .875rem;
+	color: white;
+}
+
+@media screen and (max-width:640px) {
+	header {
+		height: 6rem;
+		text-align: center;
+	}
+
+	.header-logo {
+		position: relative;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	header img,
+	header h1 {
+		top: -.5rem;
+	}
+
+	header nav {
+		position: relative;
+		top: 4rem;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	header li {
+		font-size: 0.75rem;
+	}
+
 }
 
 header a {
@@ -67,9 +108,9 @@ header a:active {
 }
 
 article {
-	margin: 1.2rem;
-	padding: 1rem 1rem 1.75rem 1rem;
-	background: white;
+	margin: 1rem;
+	padding: 1rem 1rem 2rem 1rem;
+	background-color: white;
 	border: .1rem solid lightgray;
 	box-shadow: .1rem .1rem gray;
 }
@@ -127,7 +168,7 @@ figure img {
 article table {
 	width: 100%;
 	margin-top: 1rem;
-	background: lightgray;
+	background-color: lightgray;
 }
 
 article tr {
@@ -142,22 +183,22 @@ article td {
 article thead {
 	color: white;
 	text-align: left;
-	background: black;
+	background-color: black;
 }
 
 article tbody {
-	background: white;
+	background-color: white;
 }
 
 article tfoot {
 	font-weight: bold;
-	background: lightgray;
+	background-color: lightgray;
 }
 
 aside {
-	margin: 2rem 1.8rem 1.5rem 1.2rem;
+	margin: 1rem;
 	padding: 1rem;
-	background: white;
+	background-color: white;
 	border: .1rem solid lightgray;
 	box-shadow: .1rem .1rem gray;
 }
@@ -191,18 +232,16 @@ aside textarea {
 	margin: 1rem 0;
 	font-size: 1.2rem;
 	color: white;
-	background: mediumblue;
+	background-color: mediumblue;
 	border: 0;
 	border-radius: 0.5rem;
 }
 
 footer {
-	bottom: 0;
-	z-index: 100;
 	width: 100%;
 	height: 5rem;
 	line-height: 5rem;
 	color: white;
 	text-align: center;
-	background: black;
+	background-color: black;
 }
