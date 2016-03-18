@@ -43,10 +43,7 @@ header li {
 }
 
 header a {
-	z-index: -1;
 	text-decoration: none;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 }
 
 header a:link {

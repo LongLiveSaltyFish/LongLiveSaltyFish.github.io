@@ -37,16 +37,13 @@ header nav {
 	line-height: 3;
 }
 
-header li {
+nav li {
 	float: left;
 	margin-right: 1.75rem;
 }
 
 header a {
-	z-index: -1;
 	text-decoration: none;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 }
 
 header a:link {
