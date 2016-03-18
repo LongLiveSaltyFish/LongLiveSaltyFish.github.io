@@ -1,4 +1,5 @@
-/*重置Reset*/
+@charset "utf-8";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,187 +7,204 @@
 }
 
 body {
+	font-size: 16px;
 	background: #ddd;
 }
 
-/*顶部*/
-header.header {
-	/* Positioning */
-	/*position: relative;*/
+header {
 	top: 0;
-	/*right: 0;*/
-	/*bottom: 0;*/
-	/*left: 0;*/
 	z-index: 100;
-
-	/* Box-model */
-	/*display: block;*/
-	/*float: left;*/
 	width: 100%;
-	height: 3em;
-
-	/* Typography */
-	/*font: normal 16px "宋体";*/
-	/*line-height: 1.5;*/
+	height: 3rem;
 	color: white;
-	/*text-align: center;*/
-
-	/* Visual */
 	background: black;
-	/*border: 0px solid white;*/
-	/*border-radius: 3px;*/
-
-	/* Misc */
-	/*opacity: 1;*/
 }
-header.header h1 {
+
+header img {
 	float: left;
-	margin-left: .5em;
+	width: 10rem;
+	height: 3rem;
+	margin-left: 1.5rem;
+}
+
+header h1 {
+	float: left;
 	line-height: 1.5;
 }
-/*顶部导航*/
-header.header>nav {
+
+header nav {
 	float: right;
 	line-height: 3;
 }
-header.header>nav li {
+
+header li {
 	float: left;
-	margin-right: 1.75em;
+	margin-right: 1.75rem;
 }
-header.header>nav a {
+
+header a {
+	z-index: -1;
 	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
-header.header>nav a:link {
+
+header a:link {
 	color: white;
 }
-header.header>nav a:visited {
+
+header a:visited {
 	color: lightgray;
 }
-header.header>nav a:focus {
+
+header a:focus {
 	color: paleturquoise;
 }
-header.header>nav a:hover {
+
+header a:hover {
 	color: aqua;
 }
-header.header>nav a:active {
+
+header a:active {
 	color: deepskyblue;
 }
 
-section {
-	margin: 1.2em;
-	padding: 1em;
+article {
+	margin: 1.2rem;
+	padding: 1rem 1rem 1.75rem 1rem;
 	background: white;
-	border: .1em solid lightgray;
-	box-shadow: .1em .1em gray;
+	border: .1rem solid lightgray;
+	box-shadow: .1rem .1rem gray;
 }
-section h2 {
-	margin-top: 1em;
-	color: black;
-}
-section h3 {
-	margin: .5em 0;
+
+.subtitle {
+	margin-top: .5rem;
 	color: gray;
 }
-section p.author_time {
-	margin: .5em 0;
+
+.author_time {
+	margin-top: .5rem;
 	color: darkgray;
 }
-section p.para {
-	margin: 1em 0;
-	line-height: 1.5em;
-	text-indent: 2em;
+
+.para {
+	margin-top: 1rem;
+	line-height: 1.5rem;
+	text-indent: 2rem;
 }
-section p.img {
-	margin: 0;
+
+.img {
+	margin-top: 1rem;
 }
-section li {
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 2em;
+
+article li {
+	margin-top: 1rem;
+	margin-left: 2rem;
 }
-section#sec_2 li{
+
+#art_2 li {
 	list-style: none;
 }
-section#sec_4 li{
-	margin-left: 3.5em;
+
+#art_4 li {
+	margin-left: 3.5rem;
 }
-section>figure {
-	width: 14em;
-	margin: 1.5em 3em;
-	border: .1em solid lightgray;
+
+article figure {
+	width: 14rem;
+	margin: 1.5rem 3rem;
+	border: .1rem solid lightgray;
 }
-section>figure>figcaption {
-	margin: .5em 0;
+
+article figcaption {
+	margin: .5rem 0;
 	text-align: center;
 	text-overflow: ellipsis;
+	white-space: nowrap;
 }
-section>figure>img {
-	margin: 1em;
+
+figure img {
+	margin: 1rem;
 }
-section table {
+
+article table {
 	width: 100%;
+	margin-top: 1rem;
 	background: lightgray;
 }
-section table tr {
-	line-height: 1.5em;
+
+article tr {
+	line-height: 1.5rem;
 }
-section table th, section table td {
-	padding-left: 0.5em;
+
+article th,
+article td {
+	padding-left: 0.5rem;
 }
-section thead {
+
+article thead {
 	color: white;
 	text-align: left;
 	background: black;
 }
-section tbody {
+
+article tbody {
 	background: white;
 }
-section tfoot {
+
+article tfoot {
 	font-weight: bold;
 	background: lightgray;
 }
 
 aside {
-	margin: 2em 1.8em 1.5em 1.2em;
-	padding: 1em;
+	margin: 2rem 1.8rem 1.5rem 1.2rem;
+	padding: 1rem;
 	background: white;
-	border: .1em solid lightgray;
-	box-shadow: .1em .1em gray;
+	border: .1rem solid lightgray;
+	box-shadow: .1rem .1rem gray;
 }
+
 aside table {
 	width: 90%;
 	table-layout: fixed;
 }
-aside table tr {
-	line-height: 2.5em;
+
+aside tr {
+	line-height: 2.5rem;
 }
-aside table th {
+
+aside th {
 	width: 40%;
 	text-align: right;
 	vertical-align: top;
 }
-aside table td.reg_tips {
+
+.reg_tips {
 	color: lightgray;
 }
+
 aside textarea {
 	width: 100%;
 }
-aside input#reg_submit {
+
+#reg_submit {
 	width: 100%;
-	height: 2.5em;
-	margin: 1em 0;
-	font-size: 1.2em;
+	height: 2.5rem;
+	margin: 1rem 0;
+	font-size: 1.2rem;
 	color: white;
 	background: mediumblue;
 	border: 0;
-	border-radius: 0.5em;
+	border-radius: 0.5rem;
 }
+
 footer {
 	bottom: 0;
 	z-index: 100;
 	width: 100%;
-	height: 5em;
-	line-height: 5em;
+	height: 5rem;
+	line-height: 5rem;
 	color: white;
 	text-align: center;
 	background: black;
