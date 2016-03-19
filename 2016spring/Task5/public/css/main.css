@@ -80,7 +80,6 @@ header li {
 	header li {
 		font-size: 0.75rem;
 	}
-
 }
 
 header a {
@@ -105,6 +104,10 @@ header a:hover {
 
 header a:active {
 	color: deepskyblue;
+}
+
+section {
+	width: 60%;
 }
 
 article {
@@ -196,11 +199,22 @@ article tfoot {
 }
 
 aside {
+	position: absolute;
+	width: 30%;
+	top: 4rem;
+	right: 0;
 	margin: 1rem;
 	padding: 1rem;
 	background-color: white;
 	border: .1rem solid lightgray;
 	box-shadow: .1rem .1rem gray;
+}
+
+
+@media screen and (max-width:640px) {
+	aside {
+		top: 6rem;
+	}
 }
 
 aside table {
